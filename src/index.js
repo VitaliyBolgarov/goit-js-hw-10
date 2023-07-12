@@ -1,4 +1,5 @@
 import axios from "axios";
+import "./sass/index.scss"
 import { fetchBreeds } from "./cat_api";
 import { fetchCatByBreed } from "./cat_api";
 
@@ -30,13 +31,14 @@ function checkInput(event) {
         .then(data => {
             let dataInfo = data[0].breeds[0];
             console.log(dataInfo);
-            catItemEl.innerHTML = `<img src=${data[0].url} alt=${dataInfo.name} width=500/>
-      <h2>${dataInfo.name}</h2>
-      <p>${dataInfo.description}</p>
-      <p>
-        <span>Temperament: </span>
-        ${dataInfo.temperament}
-      </p>`;
+            catItemEl.innerHTML = `
+            <img src=${data[0].url} alt=${dataInfo.name} height=300/>
+      
+         <div class="cat-card">
+          <h2 class="cat-name">${dataInfo.name}</h2>
+          <p class="cat-desc">${dataInfo.description}</p>
+          <p><span class="cat-mood">Temperament: </span>${dataInfo.temperament}</p>
+         </div>`;
         }).catch(err => console.log(err));
 }
 

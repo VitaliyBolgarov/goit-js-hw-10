@@ -26,3 +26,30 @@
   background-size: cover;
   background-position: center;
 }
+
+body {
+  background-color: aqua;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cat-info {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.cat-name {
+  color: brown;
+}
+
+.cat-card {
+  max-width: 600px;
+}
+
+.cat-mood{
+  font-weight: 700;
+}
