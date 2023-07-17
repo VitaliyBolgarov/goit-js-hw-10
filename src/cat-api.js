@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const BASE_URL = "https://api.thecatapi.com/v1";
 const API_KEY = "live_hP6H204vpUdETEOaUdWpI7E2L2kyydQsb5iYRdJtdkjILdxbt3ZNy6JmQuLU9CwE";
 
