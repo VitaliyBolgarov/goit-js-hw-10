@@ -62,7 +62,7 @@ function createCatMarkup(data, dataInfo) {
     <h2 class="cat-name">${dataInfo.name}</h2>
     <p>${dataInfo.description}</p>
       <p>
-        <span>Temperament: </span>
+        <span class="cat-mood">Temperament: </span>
         ${dataInfo.temperament}
       </p>
     </div>`;
